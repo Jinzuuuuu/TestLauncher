@@ -174,7 +174,7 @@ ipcMain.on(MSFT_OPCODE.OPEN_LOGOUT, (ipcEvent, uuid, isLastAccount) => {
     msftLogoutSuccess = false
     msftLogoutSuccessSent = false
     msftLogoutWindow = new BrowserWindow({
-        title: 'Microsoft Logout',
+        title: 'Déconnexion Microsoft',
         backgroundColor: '#222222',
         width: 520,
         height: 600,
@@ -276,7 +276,7 @@ function createMenu() {
 
         // New edit menu adds support for text-editing keyboard shortcuts
         let editSubMenu = {
-            label: 'Edit',
+            label: 'Modifier',
             submenu: [{
                 label: 'Undo',
                 accelerator: 'CmdOrCtrl+Z',

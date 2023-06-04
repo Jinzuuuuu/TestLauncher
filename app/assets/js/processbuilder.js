@@ -80,12 +80,12 @@ class ProcessBuilder {
             data.trim().split('\n').forEach(x => console.log(`\x1b[31m[Minecraft]\x1b[0m ${x}`))
         })
         child.on('close', (code, signal) => {
-            logger.info('Exited with code', code)
+            logger.info('Erreur code :', code)
             fs.remove(tempNativePath, (err) => {
                 if(err){
-                    logger.warn('Error while deleting temp dir', err)
+                    logger.warn('Erreur lors de la suppression du répertoire temporaire', err)
                 } else {
-                    logger.info('Temp dir deleted successfully.')
+                    logger.info('Répertoire temporaire supprimé avec succès.')
                 }
             })
         })
@@ -522,8 +522,8 @@ class ProcessBuilder {
             isAutoconnectBroken = ProcessBuilder.isAutoconnectBroken(this.forgeData.id.split('-')[2])
         } catch(err) {
             logger.error(err)
-            logger.error('Forge version format changed.. assuming autoconnect works.')
-            logger.debug('Forge version:', this.forgeData.id)
+            logger.error('Le format de la version de forge à changer.. assuming autoconnect works.')
+            logger.debug('Version de Forge:', this.forgeData.id)
         }
 
         if(isAutoconnectBroken) {
@@ -741,7 +741,7 @@ class ProcessBuilder {
                         if(!shouldExclude){
                             fs.writeFile(path.join(tempNativePath, fileName), zipEntries[i].getData(), (err) => {
                                 if(err){
-                                    logger.error('Error while extracting native library:', err)
+                                    logger.error('Erreur durant lextraction des librairies natives:', err)
                                 }
                             })
                         }
@@ -792,7 +792,7 @@ class ProcessBuilder {
                         if(!shouldExclude){
                             fs.writeFile(path.join(tempNativePath, extractName), zipEntries[i].getData(), (err) => {
                                 if(err){
-                                    logger.error('Error while extracting native library:', err)
+                                    logger.error('Erreur durant lextraction des librairies natives:', err)
                                 }
                             })
                         }

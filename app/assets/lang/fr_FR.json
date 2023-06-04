@@ -1,0 +1,49 @@
+{
+    "html": {
+        "avatarOverlay": "Modifier"
+    },
+    "js": {
+        "login": {
+            "error": {
+                "invalidValue": "* Valeur invalide",
+                "requiredValue": "* Nécessaire",
+                "userMigrated": {
+                    "title": "Erreur durant la connexion:<br>Mauvais identifiants",
+                    "desc": "Vous avez essayer de vous connecter à un compte déjà migré. Ré-essayez en utilisant l'email du compte à la place de l'identifiant."
+                },
+                "invalidCredentials": {
+                    "title": "Erreur durant la connexion:<br>Mauvais identifiants",
+                    "desc": "L'email ou le mot de passe est inccorect. Veuillez ré-essayer."
+                },
+                "rateLimit": {
+                    "title": "Erreur durant la connexion:<br>Trop d'essais effectués",
+                    "desc": "There have been too many login attempts with this account recently. Please try again later."
+                },
+                "noInternet": {
+                    "title": "Erreur durant la connexion:<br>Aucune connexion internet",
+                    "desc": "You must be connected to the internet in order to login. Please connect and try again."
+                },
+                "authDown": {
+                    "title": "Erreur durant la connexion:<br>Serveurs d'authentification hors-ligne",
+                    "desc": "Mojang's authentication server is currently offline or unreachable. Please wait a bit and try again. You can check the status of the server on <a href=\"https://help.mojang.com/\">Mojang's help portal</a>."
+                },
+                "notPaid": {
+                    "title": "Erreur durant la connexion:<br>Jeu non acheter",
+                    "desc": "The account you are trying to login with has not purchased a copy of Minecraft.<br>You may purchase a copy on <a href=\"https://minecraft.net/\">Minecraft.net</a>"
+                },
+                "unknown": {
+                    "title": "Erreur durant la connexion:<br>Erreur inconnue"
+                }
+            },
+            "login": "SE CONNECTER",
+            "loggingIn": "CONNEXION EN COURS",
+            "success": "SUCCÉS",
+            "tryAgain": "RÉ-ESSAYEZ"
+        },
+        "landing": {
+            "launch": {
+                "pleaseWait": "Veuillez patienter..."
+            }
+        }
+    }
+}
